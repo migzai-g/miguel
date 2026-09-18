@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  background: #111;
+  color: #eee;
+  font-family: "Share Tech Mono", monospace;
+}
+
+main {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+header {
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #333;
+}
+
+.tag {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(4rem, 12vw, 9rem);
+  font-weight: 400;
+  letter-spacing: -0.08em;
+}
+
+header p {
+  max-width: 650px;
+  margin-top: 30px;
+  color: #999;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 25px 0;
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #777;
+}
+
+.project-link {
+  color: #eee;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.project-link:hover {
+  color: #777;
+}
+
+
+section {
+  padding: 80px 0;
+  border-bottom: 1px solid #333;
+}
+
+.section-title {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 0;
+  border-top: 1px solid #292929;
+}
+
+article h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+article p {
+  max-width: 600px;
+  margin: 0;
+  color: #888;
+  line-height: 1.5;
+}
+
+article span {
+  color: #555;
+  white-space: nowrap;
+}
+
+section > p {
+  max-width: 700px;
+  color: #999;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  color: #555;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    min-height: 70vh;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  article {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
